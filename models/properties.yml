@@ -1,0 +1,16 @@
+sources:
+  - name: "NAMASTE_SQL_ORDERS"
+    database: DBT_LEARN
+    schema: PROD
+    tables:
+      - name: "ORDERS"
+
+
+models:
+  - name: "Top_Customers"
+    config:
+      materialized: 'table'
+
+  - name: "Top_products"
+    config:
+      materialized: 'view'
